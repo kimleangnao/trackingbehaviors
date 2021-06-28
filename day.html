@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tracker: View Day</title>
+        <link href="./index.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="background">
+            <nav class="background__nav">
+                <ul class="background__nav__ul">
+                    <li class="background__nav__ul__li">
+                        <a class="background__nav__ul__li__link" href="index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="background__nav__ul__li">
+                        <a class="background__nav__ul__li__link" href="behaviors.html">
+                            BEAVIORS
+                        </a>                    
+                    </li>
+                    <li class="background__nav__ul__li">
+                        <a class="background__nav__ul__li__link" href="create.html">
+                            CREATE
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="background__wrap">
+                <p class="background__wrap__title">View Your Day</p>
+                <p class="background__wrap__title--second">Date</p>
+                <div class="background__wrap__date">
+                    06/24/2021
+                </div>
+                <p class="background__wrap__title--second">Behavior</p>
+                <div class="background__wrap__behaviors--day">
+
+                   
+                  
+                </div>
+                
+                
+                <!-- display this when trying to add behavior-->
+                <!-- 
+                <div class="background__wrap__form__behavior background__wrap__form__behavior--addNew">
+                    <div class="background__wrap__form__behavior__top">
+                        <select class="background__wrap__form__behavior__gbn">
+                            <option value="minus">-</option>
+                            <option value="plus">+</option>
+                            <option value="equal">=</option>
+                        </select>
+                        
+                        <input type="text" class="background__wrap__form__behavior__text" />
+                        
+                        <select class="background__wrap__form__behavior__text" >
+                            <option value="Woke up">Woke up</option>
+                            <option value="Shower">Shower</option>
+                            <option value="Eat lunch">Eat lunch</option>
+                            <option value="Eat breakfast">Eat breakfast</option>
+                        </select>
+                        
+                    </div>
+                    
+                    <div class="background__wrap__form__behavior__bottom">
+                        <div class="background__wrap__form__behavior__bottom__add">
+                            Add
+                        </div>
+                        <div class="background__wrap__form__behavior__bottom__choose">
+                            Choose from existing behavior
+                        </div>
+                    </div>
+                </div>
+                -->
+
+                <div class="background__wrap__form__behavior background__wrap__form__behavior--add">
+                    <div class="background__wrap__form__behavior__gbn">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="background__wrap__form__behavior__text">
+                        Add behavior
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <script src="./helper.js"></script>
+        <script src="./day.js"></script>
+    </body>
+</html>
