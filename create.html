@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tracker: Create A New Day</title>
+        <link href="./index.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="background">
+            <nav class="background__nav">
+                <ul class="background__nav__ul">
+                    <li class="background__nav__ul__li">
+                        <a class="background__nav__ul__li__link" href="index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="background__nav__ul__li">
+                        <a class="background__nav__ul__li__link" href="behaviors.html">
+                            BEAVIORS
+                        </a>                    
+                    </li>
+                    <li class="background__nav__ul__li">
+                        <a class="background__nav__ul__li__link" href="create.html">
+                            CREATE
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="background__wrap">
+                <p class="background__wrap__title">Create A New Day</p>
+                <form class="background__wrap__form">
+                    <label class="background__wrap__form__label">Date</label>
+                    <input type="date" id="js--createDate" class="background__wrap__form__input">
+                    <label class="background__wrap__form__label">Behaviors</label>
+                    <div class="background__wrap__days__empty">
+                        <p><i class="fas fa-folder-open"></i> Look like this place is empty, add some behaviors</p>
+                    </div>
+                    
+                    <div class="background__wrap__form__behaviors">
+                        <!--
+                        <div class="background__wrap__form__behavior">
+                            <div class="background__wrap__form__behavior__gbn">
+                                =
+                            </div>
+                            <div class="background__wrap__form__behavior__text">
+                                Woke up
+                            </div>  
+                        </div>
+                        -->
+                    </div>
+                   
+               
+                    <!-- display this when trying to add behavior-->
+                 
+                    <div id="js--addNew" class="background__wrap__form__behavior background__wrap__form__behavior--addNew">
+                        <div class="background__wrap__form__behavior__top">
+                            <select id="js--typeSelect" class="background__wrap__form__behavior__gbn">
+                                <option value="-">-</option>
+                                <option value="+">+</option>
+                                <option value="=">=</option>
+                            </select>
+                          
+                            <input type="text" id="js--inputNewBehavior" class="background__wrap__form__behavior__text--input" />
+                         
+                            <select id="js--selectChoice" class="background__wrap__form__behavior__text--select" >
+
+                            </select>
+                         
+                        </div>
+                       
+
+                        <div class="background__wrap__form__behavior__bottom">
+                            <div id="js--addBehaviorToList" class="background__wrap__form__behavior__bottom__add">
+                                Add
+                            </div>
+                            <div id="js--cancelAddNewBehavior" class="background__wrap__form__behavior__bottom__cancel">
+                                Cancel
+                            </div>
+                            <div id="js--choose" class="background__wrap__form__behavior__bottom__choose">
+                                Choose from existing behavior
+                            </div>
+                            <div id="js--addNewBehavior" class="background__wrap__form__behavior__bottom__addNewBehavior">
+                                Write a new behavior
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div id="js--addBehavior" class="background__wrap__form__behavior background__wrap__form__behavior--add">
+                        <div class="background__wrap__form__behavior__gbn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="background__wrap__form__behavior__text">
+                            Add behavior
+                        </div>  
+                    </div>
+
+                    <input type="submit" id="submit" value="Create" class="background__wrap__form__submit">
+                </form>
+            </div>
+
+        </div>
+
+
+        <script src="./helper.js"></script>
+        <script src="./create.js"></script>
+    </body>
+</html>
