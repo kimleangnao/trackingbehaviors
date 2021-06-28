@@ -218,7 +218,7 @@ form.addEventListener("submit", function(e){
 
 
 
-        window.location.href = "/day.html?id=" + id;
+        window.location.href = "day.html?id=" + id;
 
     }else{
         //you need a day
