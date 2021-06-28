@@ -19,7 +19,7 @@ if(getDays){
         //push a tag to parent div
         let wrap = $(".background__wrap__days").element;
         let a = $().createElement("a", "background__wrap__days__box");
-        a.href = "/day.html?id="+getDays[i].id;
+        a.href = "day.html?id="+getDays[i].id;
         let number = "0"+(i+1);
         let numNode = $().createElement("div", "background__wrap__days__box__num", number);
         let dateNode = $().createElement("div", "background__wrap__days__box__text", getDays[i].date);
@@ -74,7 +74,7 @@ if(getDays){
         //push a tag to parent div
         let wrap = $(".background__wrap__display__group__days").element;
         let a = $().createElement("a", "background__wrap__display__group__days__box");
-        a.href = "/day.html?id="+getDays[i].id;
+        a.href = "day.html?id="+getDays[i].id;
         let number = "0"+(i+1);
         let numNode = $().createElement("div", "background__wrap__display__group__days__box__num", number);
         let dateNode = $().createElement("div", "background__wrap__display__group__days__box__date", getDays[i].date);
