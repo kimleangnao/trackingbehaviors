@@ -5,6 +5,9 @@ let getRecent = JSON.parse(localStorage.getItem("recentAdd"));
 let getGoals = JSON.parse(localStorage.getItem("goals"));
 let creatingNewGoals = [];
 
+let behaviorsNumber = 0;
+let recentBehaviorsNumber = 0;
+
 //if there is a getGoals, then load that to html
 if(getGoals){
     let parentNode = $(".background__wrap__goals__all").element;
@@ -79,6 +82,7 @@ $("#js--cancelAddNewBehavior").click(function(){
 if(getBehaviors){
     let parents = $(".background__wrap__behaviors").element;
     for(let i = 0; i < getBehaviors.length; i++){
+        behaviorsNumber++;
         let wrap = $().createElement("div", "background__wrap__behaviors__box");
         let typeNode = $().createElement("div", "background__wrap__behaviors__box__gbn", "?");
         let textNode = $().createElement("div", "background__wrap__behaviors__box__text", getBehaviors[i])
@@ -90,10 +94,14 @@ if(getBehaviors){
     }
 }
 
+//update the number
+$("#js--behaviorTitle").setText("Your Behaviors["+behaviorsNumber+"]");
+
 //load recent behavior
 if(getRecent){
     let parents = $("#js--recentBehaviors").element;
     for(let i = 0; i < getRecent.behaviors.length; i++){
+        recentBehaviorsNumber++;
         let wrap = $().createElement("div", "background__wrap__behaviors__box");
         let typeNode = $().createElement("div", "background__wrap__behaviors__box__gbn", getRecent.behaviors[i].type);
         let textNode = $().createElement("div", "background__wrap__behaviors__box__text", getRecent.behaviors[i].text)
@@ -104,3 +112,6 @@ if(getRecent){
         parents.appendChild(wrap);
     }
 }
+
+//update the number
+$("#js--recentBehaviorTitle").setText("Recent Behaviors["+behaviorsNumber+"]");
