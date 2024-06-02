@@ -160,16 +160,16 @@ let form = $(".background__wrap__form").element;
 form.addEventListener("submit", function(e){
     e.preventDefault();
     
-
+  
 
     let date = $("#js--createDate").value();
-   
+
 
     if(date){
         let id = Math.floor(Math.random() * 1000000)
         creatingNewDay.id = id;
-        creatingNewDay.date = date;
-        console.log(creatingNewDay)
+        creatingNewDay.date = new Date(date);
+        //console.log(creatingNewDay)
 
         //posting it to localstorage as recent with id
         //id: {}
@@ -178,7 +178,8 @@ form.addEventListener("submit", function(e){
         //check if getDays existed
         //if no create a new one
         //if yes add it
-        /*structure
+        /*
+        structure
         days : [
             {
                 "id": "11212",

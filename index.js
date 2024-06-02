@@ -22,7 +22,11 @@ if(getDays){
         a.href = "day.html?id="+getDays[i].id;
         let number = "0"+(i+1);
         let numNode = $().createElement("div", "background__wrap__days__box__num", number);
-        let dateNode = $().createElement("div", "background__wrap__days__box__text", getDays[i].date);
+
+        let currentDate = new Date(getDays[i].date)
+        let currentDateString = `${currentDate.getMonth() + 1}-${currentDate.getDate()}-${currentDate.getFullYear()}`
+
+        let dateNode = $().createElement("div", "background__wrap__days__box__text", currentDateString);
 
         a.appendChild(numNode);
         a.appendChild(dateNode);
@@ -77,7 +81,9 @@ if(getDays){
         a.href = "day.html?id="+getDays[i].id;
         let number = "0"+(i+1);
         let numNode = $().createElement("div", "background__wrap__display__group__days__box__num", number);
-        let dateNode = $().createElement("div", "background__wrap__display__group__days__box__date", getDays[i].date);
+        let currentDate = new Date(getDays[i].date)
+        let currentDateString = `${currentDate.getMonth() + 1}-${currentDate.getDate()}-${currentDate.getFullYear()}`
+        let dateNode = $().createElement("div", "background__wrap__display__group__days__box__date", currentDateString);
 
         a.appendChild(numNode);
         a.appendChild(dateNode);
