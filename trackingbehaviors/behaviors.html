@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tracker: Behavior</title>
+        <link href="./index.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="background">
+            <nav class="background__nav">
+                <ul class="background__nav__ul">
+                    <li class="background__nav__ul__li">
+                        <a class="background__nav__ul__li__link" href="index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="background__nav__ul__li">
+                        <a class="background__nav__ul__li__link" href="behaviors.html">
+                            BEAVIORS
+                        </a>                    
+                    </li>
+                    <li class="background__nav__ul__li">
+                        <a class="background__nav__ul__li__link" href="create.html">
+                            CREATE
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="background__wrap">
+                <p class="background__wrap__title">Your Goal</p>
+                <div class="background__wrap__goals">
+                    <div class="background__wrap__goals__all">
+
+                        
+
+                    </div>
+                   
+
+                    <div id="js--addNew" class="background__wrap__form__behavior background__wrap__form__behavior--addNew">
+                        <div class="background__wrap__form__behavior__top">
+                            <div class="background__wrap__form__behavior__gbn">
+                           
+                            </div>
+                          
+                            <input type="text" id="js--inputNewBehavior" class="background__wrap__form__behavior__text--input--goal" />
+                         
+                        </div>
+                       
+
+                        <div class="background__wrap__form__behavior__bottom">
+                            <div id="js--addBehaviorToList" class="background__wrap__form__behavior__bottom__add">
+                                Add
+                            </div>
+                            <div id="js--cancelAddNewBehavior" class="background__wrap__form__behavior__bottom__cancel">
+                                Cancel
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="js--addBehavior" class="background__wrap__form__behavior background__wrap__form__behavior--add">
+                        <div class="background__wrap__form__behavior__gbn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="background__wrap__form__behavior__text">
+                            Add a new goal
+                        </div>  
+                    </div>
+                </div>
+                <p id="js--behaviorTitle" class="background__wrap__title">Your Behaviors[0]</p>
+                <div class="background__wrap__behaviors">
+
+  
+                </div>
+                <p id="js--recentBehaviorTitle" class="background__wrap__title ">Recent Behaviors[0]</p>
+                <div id="js--recentBehaviors" class="background__wrap__behaviors">
+                    
+                    
+               
+                </div>
+                
+            </div>
+
+        </div>
+
+        <script src="./helper.js"></script>
+        <script src="./behaviors.js"></script>
+    </body>
+</html>
